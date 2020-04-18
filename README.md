@@ -9,7 +9,15 @@ This is an example structure of Clean Architecture for a RESTful api / backend c
 5. Entity rules will be applied and use case returns a data or result.
 6. Controller makes a response according to the results or data produced by the use case.
 7. Controller sends back the response to the users.
- 
+### Structure
+```
+└── src
+    ├── controllers         - Interface Adapter Layer
+    ├── index.js            - Framework and Adapter Layer
+    ├── infrastructure      - Framework and Adapter Layer
+    ├── name                - Entity / Business Rules Layer
+    └── use-cases           - Application Level Rules Layer
+```
 ### To run
 - Install packages
 ```

@@ -1,0 +1,21 @@
+### Test
+GET http://localhost:5467/api HTTP/1.1
+### 
+POST http://localhost:5467/api/request_name HTTP/1.1
+content-type: application/json
+
+{
+    "name": "key_name"
+}
+
+### Test NotFound - should return page not found
+POST http://localhost:5467/api/SuchUrlNeverExist
+
+### User Registraion
+POST http://localhost:5467/api/user/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "test@fasting.com",
+    "name": "TESTNAME"
+}

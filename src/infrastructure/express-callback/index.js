@@ -1,6 +1,7 @@
 // Turn request to an object called httpRequest and call controller
 module.exports = function makeExpressCallback (controller) {
-  return (req, res) => {
+  
+  return (req, res) => {    
     const httpRequest = {
       body: req.body,
       query: req.query,
